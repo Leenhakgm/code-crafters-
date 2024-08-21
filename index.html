@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CGPA Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>CGPA Calculator</h1>
+        
+        <div class="section">
+            <label for="numSemesters">Number of Semesters:</label>
+            <input type="number" id="numSemesters" min="1" value="1" max="8" value="8" />
+        </div>
+        
+        <div class="section" id="semesterSections">
+            <!-- Dynamic content for semesters will be inserted here -->
+        </div>
+        
+        <button onclick="calculateCGPA()">Calculate</button>
+        
+        <div class="result" id="result"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
